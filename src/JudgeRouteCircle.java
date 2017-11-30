@@ -1,11 +1,13 @@
-import org.junit.Assert;
+
 import org.junit.Test;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class JudgeRouteCircle {
     @Test
     public void test() {
-        Assert.assertEquals(true, judgeCircle("UUDDLLRR"));
-        Assert.assertEquals(false, judgeCircle("UDLLR"));
+        assertEquals(true, judgeCircle("UUDDLLRR"));
+        assertEquals(false, judgeCircle("UDLLR"));
     }
 
     public boolean judgeCircle(String moves) {
